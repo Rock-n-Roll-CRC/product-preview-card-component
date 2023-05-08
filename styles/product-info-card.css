@@ -55,3 +55,7 @@
 .product-info-card button img {
   margin-right: 10px;
 }
+
+.product-info-card button:active {
+  background-color: #1f4236;
+}

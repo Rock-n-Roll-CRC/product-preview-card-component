@@ -35,3 +35,36 @@ body {
   border-bottom-left-radius: 10px;
   overflow: hidden;
 }
+
+@media all and (max-width: 575px) {
+  .product-preview-card {
+    flex-direction: column;
+    height: 645px;
+    width: 345px;
+  }
+
+  .product-picture-card {
+    height: 40%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .product-picture-card img:first-child {
+    display: none;
+  }
+
+  .product-picture-card img:last-child {
+    display: block !important;
+  }
+
+  .product-info-card {
+    height: 60%;
+    width: 100%;
+    padding: 25px !important;
+  }
+
+  .product-info-card button {
+    padding: 14px 94px !important;
+  }
+}
