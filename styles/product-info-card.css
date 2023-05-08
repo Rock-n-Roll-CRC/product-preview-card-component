@@ -44,11 +44,13 @@
 .product-info-card button {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   background-color: #3c8067;
   color: #fff;
   font: 500 14px Montserrat, sans-serif;
   border-radius: 7px;
-  padding: 14px 58px;
+  padding: 14px 0;
   cursor: pointer;
 }
 
