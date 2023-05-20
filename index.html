@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple product preview card of the Gabrielle Essence Eau De Parfum for the House of CHANEL."
+    />
     <title>Product Preview Card Component</title>
 
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/product-picture-card.css" />
-    <link rel="stylesheet" href="styles/product-info-card.css" />
+    <link rel="stylesheet" href="./assets/styles/general.css" />
+    <link rel="stylesheet" href="./assets/styles/product-picture-card.css" />
+    <link rel="stylesheet" href="./assets/styles/product-info-card.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,33 +22,39 @@
     />
   </head>
   <body>
-    <div class="product-preview-card">
-      <div class="product-picture-card">
-        <img
-          src="images/image-product-desktop.jpg"
-          alt="Yellow perfume bottle by CHANEL on the desk next to some green leaves"
-        />
-        <img
-          src="images/image-product-mobile.jpg"
-          alt="Yellow perfume bottle by CHANEL on the desk next to some green leaves"
-        />
-      </div>
-      <div class="product-info-card">
-        <p class="product-category">Perfume</p>
-        <p class="product-name">Gabrielle Essence Eau De Parfum</p>
-        <p class="product-description">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div>
-          <p class="product-price">&dollar;149.99</p>
-          <p class="product-price-no-discount">&dollar;169.99</p>
+    <header>
+      <h1 class="visually-hidden">Product Preview Card Component</h1>
+    </header>
+
+    <main>
+      <div class="product-preview-card">
+        <div class="product-picture-card">
+          <img
+            src="./assets/images/image-product-desktop.jpg"
+            alt="Yellow perfume bottle by CHANEL on the desk next to some green leaves"
+          />
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="Yellow perfume bottle by CHANEL on the desk next to some green leaves"
+          />
         </div>
-        <button>
-          <img src="images/icon-cart.svg" alt="Trolley icon" />
-          Add to Cart
-        </button>
+        <div class="product-info-card">
+          <p class="product-category">Perfume</p>
+          <p class="product-name">Gabrielle Essence Eau De Parfum</p>
+          <p class="product-description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div>
+            <p class="product-price">&dollar;149.99</p>
+            <p class="product-price-no-discount">&dollar;169.99</p>
+          </div>
+          <button>
+            <img src="./assets/images/icon-cart.svg" alt="Trolley icon" />
+            Add to Cart
+          </button>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>

@@ -36,6 +36,18 @@ body {
   overflow: hidden;
 }
 
+/* Screen readers only */
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 @media all and (max-width: 575px) {
   .product-preview-card {
     flex-direction: column;
